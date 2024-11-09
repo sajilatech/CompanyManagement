@@ -1,5 +1,7 @@
 assessmentApp Project name
 
+http://127.0.0.1:8000/login
+
 Admin login: sajila@test.com
 
 Password : admin456
