@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  .sidebar .menu {
+    list-style: none;
+  }
+  
+  .sidebar .menu li {
+    margin: 20px 0;
+  }
+  
+  .sidebar .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar .menu a:hover {
+    background-color: #575757;
+  }
+  
+  /* Content styling */
+  .content {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+    
+    .sidebar h2 {
+      font-size: 20px;
+    }
+  
+    .sidebar .menu a {
+      font-size: 16px;
+    }
+  
+    .header h1 {
+      font-size: 20px;
+    }
+  }
+
+  /* Table Container for responsive design */
+.table-container {
+  overflow-x: auto;
+  padding: 10px;
+  background-color: #f4f4f4;
+  width: 80%;
+}
+
+/* General Table Styling */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.admin-table thead {
+  background-color: #333;
+  color: #fff;
+}
+
+.admin-table th, .admin-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.admin-table td {
+  font-size: 16px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.edit {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.btn.delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Responsive Table for Smaller Screens */
+@media (max-width: 768px) {
+  .admin-table th, .admin-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.pagination li {
+  margin: 0 3px;
+}
+
+.pagination li a,
+.pagination li span {
+  color: #444;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.pagination li a:hover {
+  background-color: #ddd;
+}
+
+.pagination .active span {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  cursor: default;
+}
+
+  
